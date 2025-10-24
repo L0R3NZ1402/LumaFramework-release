@@ -1,0 +1,55 @@
+.luma-accordion .accordion-button {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    height: 56px;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    font-weight: 600;
+    box-shadow: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.luma-accordion .accordion-button:not(.collapsed) {
+    background-color: #e9ecef;
+    color: #000;
+    border-color: #ccc;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.luma-accordion .accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+.luma-accordion .accordion-button i {
+    transition: transform 0.3s ease;
+    font-size: 1.25rem;
+    color: #000;
+    flex-shrink: 0;
+}
+
+.luma-accordion .accordion-button:not(.collapsed) i {
+    transform: rotate(45deg);
+}
+
+.luma-accordion .accordion-collapse {
+    border: 1px solid #ddd;
+    border-top: none;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: #fff;
+    color: #000;
+}
+
+.luma-accordion .accordion-body {
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem 1.5rem;
+    color: #000;
+    line-height: 1.5;
+}

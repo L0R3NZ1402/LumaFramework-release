@@ -1,0 +1,12 @@
+.luma-modal .modal-content {
+    border-radius: 1rem;
+}
+
+.luma-modal .modal-title {
+    color: #000;
+}
+
+.luma-modal .modal-body {
+    font-size: 1rem;
+    color: #333;
+}

@@ -1,0 +1,42 @@
+.luma-card-a {
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    margin: 1rem auto;
+}
+
+.luma-card-a .card-header {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.luma-card-a .card-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.luma-card-a .card-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+}
+
+.luma-card-a .btn-outline-dark {
+    border-color: #000;
+    color: #000;
+    font-weight: 600;
+}
+
+.luma-card-a .btn-outline-dark:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.luma-card-a i.bi {
+    color: #000;
+}

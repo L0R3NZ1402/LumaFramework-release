@@ -1,0 +1,27 @@
+.luma-input .form-label {
+    color: #000;
+    font-weight: 500;
+}
+
+.luma-input .input-group-text {
+    background-color: #f1f1f1;
+    border: 1px solid #ced4da;
+    color: #000;
+}
+
+.luma-input .form-control {
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    color: #000;
+    border-left: none;
+    transition: box-shadow 0.2s ease;
+}
+
+.luma-input .form-control:focus {
+    border-color: #000;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.15);
+}
+
+.luma-input .input-group-text i {
+    font-size: 1rem;
+}

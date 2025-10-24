@@ -1,0 +1,49 @@
+.luma-tabs {
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.luma-tabs .nav-link {
+    color: #000;
+    font-weight: 600;
+    background-color: #f8f9fa;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    margin-right: 0.25rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.luma-tabs .nav-link:hover {
+    background-color: #e9ecef;
+    color: #000;
+}
+
+.luma-tabs .nav-link.active {
+    background-color: #fff;
+    color: #000;
+    border-color: #ddd #ddd #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.luma-tab-content {
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    min-height: 150px;
+}
+
+.luma-tabs .nav-link i {
+    font-size: 1.2rem;
+    color: #000;
+    flex-shrink: 0;
+}

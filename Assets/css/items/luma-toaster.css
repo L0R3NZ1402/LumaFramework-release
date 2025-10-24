@@ -1,0 +1,55 @@
+#luma-toast-container {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/* Toast styles */
+.luma-toast {
+    background-color: white;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    min-width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show toast */
+.luma-toast.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Icon */
+.luma-toast i {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+/* Message text */
+.toast-message {
+    flex-grow: 1;
+    font-weight: 600;
+}
+
+/* Close button */
+.toast-close {
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: #aaa;
+    transition: color 0.2s ease;
+}
+
+.toast-close:hover {
+    color: #fff;
+}

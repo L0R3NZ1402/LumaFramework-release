@@ -1,0 +1,96 @@
+#signinBody {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeInOpacity 1s ease-in forwards;
+}
+
+@keyframes fadeInOpacity {
+    to {
+        opacity: 1;
+    }
+}
+
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Replace gold (#DAA520) highlights with black (#000) */
+.login-card h2 {
+    color: #000;
+    /* Heading color */
+}
+
+.login-card label {
+    color: #000;
+    /* Label text color */
+}
+
+/* Input focus */
+.login-card input:focus {
+    border-color: #000 !important;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Input group icon color */
+.login-card .input-group-text i {
+    color: #000 !important;
+}
+
+/* Button */
+.btn-login {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+.btn-login:hover,
+.btn-login:focus {
+    background-color: #222;
+    border-color: #222;
+    color: #fff;
+}
+
+/* Link */
+.login-card a {
+    color: #000;
+}
+
+.login-card a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Form text */
+.login-card .form-text {
+    color: #000;
+}
+
+
+.form-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.form-text a {
+    color: #DAA520;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-text a:hover {
+    text-decoration: underline;
+    color: #b8860b;
+}

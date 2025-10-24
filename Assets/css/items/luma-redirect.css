@@ -1,0 +1,44 @@
+#lumaOverlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+.luma-redirect {
+    background: #fff;
+    border-radius: 0.75rem;
+    padding: 2rem 2.5rem;
+    width: 320px;
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.progress-container {
+    height: 8px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: black;
+    transition: width 2s linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
