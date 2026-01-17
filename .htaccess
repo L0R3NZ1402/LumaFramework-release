@@ -1,19 +1,33 @@
-# PHP settings
+# -------------------------
+# PHP Settings
+# -------------------------
 php_value display_errors Off
 php_value mbstring.http_input auto
 php_value date.timezone Asia/Manila
 
-# Enable mod_rewrite
+# -------------------------
+# Enable Rewrite Engine
+# -------------------------
 RewriteEngine On
-RewriteBase /lumaframework_main/
 
-# If file/folder doesn’t exist, route everything to index.php
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.php [L]
-
-# Default page
+# -------------------------
+# Default index file
+# -------------------------
 DirectoryIndex index.php
 
-# Custom 404 error page
+# -------------------------
+# Remove .php from URLs
+# -------------------------
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ $1.php [L]
+
+# -------------------------
+# Route empty URL to index.php
+# -------------------------
+RewriteRule ^$ index.php [L]
+
+# -------------------------
+# Custom 404 Page
+# -------------------------
 ErrorDocument 404 /404.html
